@@ -1,13 +1,17 @@
 <?php
 
-echo <table border='1'>;
+$x=[];
+$y=[];
+for ($i=0;$i<10;$i++){
+    $x[]=$i;
+    $y[$i]=$i;
+}
+echo "x";
+echo "<pre>";print_r($x);echo "</pre>";
 
-echo <tr></tr>
-    <td>1*1</td>
-echo </tr>;
+echo"<hr>";
 
-echo </table>;
-
-
+echo "x";
+echo "<pre>";print_r($y);echo "</pre>";
 
 ?>
