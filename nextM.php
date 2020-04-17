@@ -9,15 +9,14 @@
 
 <?php
 $month=date("m");
+
 if(isset($_GET["month"])){
     $month=$_GET["month"];
 }
-
 ?>
-
-<a href="nextM.php?month=<?=$month-1;?>">上一月(<?$month-1;?>)</a>
-<span>本月()</span>
-<a href="nextM.php?month=<?=$month+1;?>">下一月(<?$month+1;?>)</a>
+<a href="nextM.php?month=<?=$month-1;?>">上一月(<?=$month-1;?>)</a>
+<span>本月(<?=$month;?>)</span>
+<a href="nextM.php?month=<?=$month+1;?>">下一月(<?=$month+1;?>)</a>
     
 </body>
 </html>
