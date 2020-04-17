@@ -3,11 +3,12 @@
     margin:0;
     background:pink;
     text-align: center;
-    color: black;
+    color: blue;
     display:flex;
     justify-content: center;
     align-items: center;
-    flex-flow:row;
+    flex-wrap: wrap;
+    /* flex-flow:row wrap; */
     }
     
     table{
@@ -18,6 +19,8 @@
         padding:5px;
         text-align:center;
     }
+
+
 </style>
 
 <h4>月曆製作</h4>
@@ -28,7 +31,7 @@ $year="2021";
 for($m=1;$m<=12;$m++){
 ?>
 <hr>
-<div>月份:<?=$m;?></div>
+<div class="calendar">月份:<?=$m;?></div>
 <table>
     <tr>
         <td>日</td>
